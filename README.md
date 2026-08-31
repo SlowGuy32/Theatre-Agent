@@ -55,3 +55,22 @@ For theatre professionals who don't know Ableton deeply, it can make the softwar
 Theatre Agent separates the creative decision from the technical implementation:
 
 **You define what should happen. Theatre Agent builds the session.**
+## How It Works
+
+### 1. Import the show's audio
+
+Add individual audio files, drag and drop multiple files, or import an entire folder.
+
+### 2. Define each cue
+
+Choose what should happen when the cue is triggered — output, level, fades, looping, EQ, playback behavior, and other cue-specific instructions.
+
+### 3. Build
+
+Theatre Agent processes the complete cue sequence and builds the required Ableton Live session automatically.
+
+### 4. Open in Ableton Live
+
+The generated project contains the tracks, scenes, audio clips, routing, automation, cue logic, and organization required by the show.
+
+The session remains a normal, fully editable Ableton Live project.
