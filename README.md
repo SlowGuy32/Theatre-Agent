@@ -21,6 +21,34 @@ Ableton Live is powerful enough to run complex theatre playback, but building a 
 Sound designers and operators may need to manually create tracks, place audio, configure outputs, set levels, program fades and automation, manage overlapping cues, and maintain playback behavior across an entire show.
 
 For experienced Ableton users, this takes time.
+## What Theatre Agent Can Build
+
+Theatre Agent translates cue-level instructions into a structured Ableton Live session.
+
+It currently supports:
+
+- Automatic track allocation
+- Main and monitor output routing
+- Custom output lanes with matching automation tracks
+- Per-cue playback levels
+- Fade-in and fade-out automation
+- Multiple fade trigger behaviors
+- Overlapping cues
+- Persistent playback across cues
+- Run-with-previous / linked cue behavior
+- Looping with automatic Warp configuration
+- Per-cue low-cut and high-cut EQ automation
+- Dedicated automation-only cues
+- CUT / stop cues
+- Selective track stopping and full-stop behavior
+- Automatic scene creation and expansion
+- Automatic cue naming and organization
+- Multi-file and folder import
+- Audio preview
+- Cue reordering
+- Automatic generation of the final Ableton Live project
+
+The generated project opens directly in Ableton Live and remains fully editable by the sound designer or operator.
 
 For theatre professionals who don't know Ableton deeply, it can make the software difficult to use at all.
 
