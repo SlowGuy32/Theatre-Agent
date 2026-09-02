@@ -109,3 +109,12 @@ This example shows a generated theatre session with main and monitor playback, p
 - Ableton Live 11
 - Mutagen for audio-file metadata and MP3 support
 - PyInstaller for desktop packaging
+## Project Status
+
+TheatreAgent is a working desktop prototype.
+
+It can turn a set of theatre audio cues into a structured Ableton Live 11 session with playback tracks, automation, routing, fades, looping, EQ, and cut cues already prepared.
+
+The current focus is further testing, workflow refinement, and preparing the tool for real-world use by theatre sound professionals.
+
+The prototype is currently being tested with feedback from local theatre sound designers.
