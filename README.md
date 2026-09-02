@@ -102,3 +102,10 @@ This example shows a generated theatre session with main and monitor playback, p
 - Expands the session dynamically when more scenes are needed
 - Supports custom output lanes while preserving the existing session structure
 - Includes a PySide6 desktop interface for building sessions without Ableton expertise
+## Built With
+
+- Python
+- PySide6 / Qt
+- Ableton Live 11
+- Mutagen for audio-file metadata and MP3 support
+- PyInstaller for desktop packaging
