@@ -81,17 +81,7 @@ TheatreAgent converts cue instructions into a structured Ableton Live session, a
 ![Generated Ableton Live session](generated-session.png)
 
 This example shows a generated theatre session with main and monitor playback, paired automation tracks, and a dedicated cut cue.
-## Features
 
-- Multi-cue session builder
-- Main, monitor, and custom output lanes — including movement between outputs
-- Automatic paired AUTO tracks
-- Cue levels and fade control
-- Cut / stop cues
-- Looping clips
-- Per-cue low-cut and high-cut EQ
-- Overlapping playback and fade-by-next-cue behaviour
-- Fully editable Ableton Live output
 ## Engineering Highlights
 
 - Generates valid, editable `.als` sessions for Ableton Live 11
