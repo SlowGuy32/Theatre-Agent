@@ -92,3 +92,13 @@ This example shows a generated theatre session with main and monitor playback, p
 - Per-cue low-cut and high-cut EQ
 - Overlapping playback and fade-by-next-cue behaviour
 - Fully editable Ableton Live output
+## Engineering Highlights
+
+- Generates valid, editable `.als` sessions for Ableton Live 11
+- Maintains playback state across cues, including overlapping sounds
+- Allocates available playback tracks automatically when cues overlap
+- Keeps paired AUTO tracks aligned with each playback cue
+- Builds automation for fades, levels, routing changes, and EQ
+- Expands the session dynamically when more scenes are needed
+- Supports custom output lanes while preserving the existing session structure
+- Includes a PySide6 desktop interface for building sessions without Ableton expertise
