@@ -74,6 +74,19 @@ Theatre Agent processes the complete cue sequence and builds the required Ableto
 The generated project contains the tracks, scenes, audio clips, routing, automation, cue logic, and organization required by the show.
 
 The session remains a normal, fully editable Ableton Live project.
+## Demo
+
+### Theatre Agent Workflow
+
+From imported audio files to a configured theatre cue sequence and generated Ableton Live session.
+
+[▶ Watch the Theatre Agent workflow demo](demo/Theatre_Agent_Demo_01_Cropped_MUTED.mp4)
+
+### Generated Ableton Live Result
+
+A walkthrough of the generated Ableton Live session, including cue placement, track allocation, routing, automation, and playback logic.
+
+[▶ Watch the generated Ableton Live session](demo/Theatre_Agent_Demo_02_Ableton_Cropped_MUTED_FIXED.mp4)
 ## Generated Ableton Live Session
 
 TheatreAgent converts cue instructions into a structured Ableton Live session, automatically handling track allocation, routing, automation lanes, and cue placement.
