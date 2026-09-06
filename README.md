@@ -105,6 +105,45 @@ This example shows a generated theatre session with main and monitor playback, p
 - Expands the session dynamically when more scenes are needed
 - Supports custom output lanes while preserving the existing session structure
 - Includes a PySide6 desktop interface for building sessions without Ableton expertise
+ ## Development Notes & Technical Challenges
+
+Theatre Agent was developed iteratively against real Ableton Live sessions. Several parts of the final architecture came directly from problems discovered while testing generated projects.
+
+### Persistent Playback Across Cues
+
+Early versions treated cues too independently. This became a problem when a sound needed to continue playing while unrelated cues were triggered.
+
+The session builder was changed to maintain playback state across the cue sequence, allowing sounds to overlap, continue through later cues, and be stopped or faded explicitly.
+
+### Automation State Protection
+
+Automation written for one cue could remain active and unintentionally affect later playback.
+
+To solve this, playback tracks are paired with dedicated `AUTO` tracks. New cues generate corresponding automation clips, creating a predictable automation state while keeping playback and automation responsibilities separate.
+
+### Dynamic Scene Generation
+
+The original Ableton template contained a fixed scene structure, which became a limitation when testing larger cue lists.
+
+The builder was extended to create additional scenes dynamically while keeping Ableton's internal scene and sequencer structures synchronized. This was then stress-tested with larger sessions containing overlapping playback, fades, stops, and automation.
+
+### Cue-Aware Track Allocation
+
+Simply assigning every new sound to the next available track was not enough for theatre playback.
+
+The allocator therefore tracks active cues and playback relationships. Sounds can be moved automatically between available MUSIC tracks when cues overlap, continue into the next cue, or require independent fades.
+
+### Per-Cue EQ Automation
+
+The first EQ implementation successfully created the device and automation data, but the generated filter behaviour did not initially match the requested result.
+
+Testing inside Ableton revealed that the correct filter modes, frequency parameters, and device state all needed to be controlled. The final implementation supports cue-specific low-cut and high-cut filtering through generated automation.
+
+### Standalone Application Packaging
+
+Once the Ableton generation pipeline was stable, the Python/PySide6 prototype was packaged as a standalone Windows application using PyInstaller.
+
+The Ableton template is bundled with the application, allowing the complete workflow to run from the GUI without requiring the user to interact with the Python project.
 ## Built With
 
 - Python
