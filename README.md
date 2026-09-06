@@ -50,7 +50,6 @@ It currently supports:
 
 The generated project opens directly in Ableton Live and remains fully editable by the sound designer or operator.
 
-For theatre professionals who don't know Ableton deeply, it can make the software difficult to use at all.
 
 Theatre Agent separates the creative decision from the technical implementation:
 
