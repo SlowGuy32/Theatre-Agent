@@ -80,13 +80,13 @@ The session remains a normal, fully editable Ableton Live project.
 
 From imported audio files to a configured theatre cue sequence and generated Ableton Live session.
 
-[▶ Watch the Theatre Agent workflow demo](demo/Theatre_Agent_Demo_01_Cropped_MUTED.mp4)
+[▶ Watch the Theatre Agent workflow demo](https://github.com/user-attachments/assets/21ce89e9-ac75-4a37-947d-0478ae31d786)
 
 ### Generated Ableton Live Result
 
-A walkthrough of the generated Ableton Live session, including cue placement, track allocation, routing, automation, and playback logic.
+A walkthrough of the generated Ableton Live session, showing cue placement, track allocation, routing, automation, and playback logic.
 
-[▶ Watch the generated Ableton Live session](demo/Theatre_Agent_Demo_02_Ableton_Cropped_MUTED_FIXED.mp4)
+[▶ Watch the generated Ableton Live session](https://github.com/user-attachments/assets/eb5a1785-ce98-44a8-af76-9acbaa82838e)
 ## Generated Ableton Live Session
 
 TheatreAgent converts cue instructions into a structured Ableton Live session, automatically handling track allocation, routing, automation lanes, and cue placement.
