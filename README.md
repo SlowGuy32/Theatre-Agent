@@ -9,18 +9,17 @@ Import your show's audio files, define what each cue should do, and Theatre Agen
 
 ### Cue Editor
 
-![Theatre Agent cue editor](theatre-agent-cue-editor.png.png)
+![Theatre Agent cue editor](theatre-agent-cue-editor.png)
 
 ### Cue List
 
-![Theatre Agent cue list](theatre-agent-cue-list.png.png)
+![Theatre Agent cue list](theatre-agent-cue-list.png)
 ## The Problem
 
 Ableton Live is powerful enough to run complex theatre playback, but building a show can involve a large amount of repetitive technical work.
 
 Sound designers and operators may need to manually create tracks, place audio, configure outputs, set levels, program fades and automation, manage overlapping cues, and maintain playback behavior across an entire show.
 
-For experienced Ableton users, this takes time.
 ## What Theatre Agent Can Build
 
 Theatre Agent translates cue-level instructions into a structured Ableton Live session.
@@ -51,7 +50,7 @@ It currently supports:
 The generated project opens directly in Ableton Live and remains fully editable by the sound designer or operator.
 
 
-Theatre Agent separates the creative decision from the technical implementation:
+Theatre Agent separates the creative decisions from the technical implementation:
 
 **You define what should happen. Theatre Agent builds the session.**
 ## How It Works
@@ -66,7 +65,7 @@ Choose what should happen when the cue is triggered — output, level, fades, lo
 
 ### 3. Build
 
-Theatre Agent processes the complete cue sequence and builds the required Ableton Live session automatically.
+Theatre Agent reads the complete cue sequence and builds the Ableton Live session automatically.
 
 ### 4. Open in Ableton Live
 
@@ -88,7 +87,7 @@ A walkthrough of the generated Ableton Live session, showing cue placement, trac
 [▶ Watch the generated Ableton Live session](https://github.com/user-attachments/assets/eb5a1785-ce98-44a8-af76-9acbaa82838e)
 ## Generated Ableton Live Session
 
-TheatreAgent converts cue instructions into a structured Ableton Live session, automatically handling track allocation, routing, automation lanes, and cue placement.
+Theatre Agent converts cue instructions into a structured Ableton Live session, automatically handling track allocation, routing, automation lanes, and cue placement.
 
 ![Generated Ableton Live session](generated-session.png)
 
@@ -103,7 +102,7 @@ This example shows a generated theatre session with main and monitor playback, p
 - Builds automation for fades, levels, routing changes, and EQ
 - Expands the session dynamically when more scenes are needed
 - Supports custom output lanes while preserving the existing session structure
-- Includes a PySide6 desktop interface for building sessions without Ableton expertise
+- Includes a PySide6 desktop interface for building sessions through a cue-based workflow
  ## Development Notes & Technical Challenges
 
 Theatre Agent was developed iteratively against real Ableton Live sessions. Several parts of the final architecture came directly from problems discovered while testing generated projects.
@@ -118,7 +117,7 @@ The session builder was changed to maintain playback state across the cue sequen
 
 Automation written for one cue could remain active and unintentionally affect later playback.
 
-To solve this, playback tracks are paired with dedicated `AUTO` tracks. New cues generate corresponding automation clips, creating a predictable automation state while keeping playback and automation responsibilities separate.
+To solve this, playback tracks are paired with dedicated `AUTO` tracks. New cues generate corresponding automation clips, preventing automation from previous cues from affecting later playback.
 
 ### Dynamic Scene Generation
 
@@ -152,10 +151,6 @@ The Ableton template is bundled with the application, allowing the complete work
 - PyInstaller for desktop packaging
 ## Project Status
 
-TheatreAgent is a working desktop prototype.
+Theatre Agent is a working desktop prototype.
 
-It can turn a set of theatre audio cues into a structured Ableton Live 11 session with playback tracks, automation, routing, fades, looping, EQ, and cut cues already prepared.
-
-The current focus is further testing, workflow refinement, and preparing the tool for real-world use by theatre sound professionals.
-
-The prototype is currently being tested with feedback from local theatre sound designers.
+The current focus is real-world testing and workflow refinement, with feedback from theatre sound designers.
